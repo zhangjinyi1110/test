@@ -18,3 +18,4 @@ git reset --hard HEAD^//回退一个版本，HEAD^^则回退两个版本，HEAD~
 git reset --hard (版本号)//移到该版本号
 cat (name)//查看内容
 git reflog//查看历史操作，版本号
+git checkout -- (name)//回退到还没添加的时候
