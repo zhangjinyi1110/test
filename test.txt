@@ -16,6 +16,13 @@ git log//查看历史纪录
 git log --pretty=oneline//查看历史记录简化版
 git reset --hard HEAD^//回退一个版本，HEAD^^则回退两个版本，HEAD~100则回退100个版本
 git reset --hard (版本号)//移到该版本号
+git reset HEAD (name)//将版本回退，舍弃缓存区
 cat (name)//查看内容
 git reflog//查看历史操作，版本号
 git checkout -- (name)//回退到还没添加的时候
+git rm (name)//删除文件
+git clone git@github.com:(name)/(filename.git)//克隆github文件到本地仓库
+
+主目录：ssh-keygen -t rsa -C "email"//创建.ssh目录,id_rsa为私钥，id_rsa.pub为公钥
+本地仓库：git remote add origin git@github.com:(name)/(filename.git)//将本地仓库添加到github
+git push -u origin master//推送至github，第一次才用-u
