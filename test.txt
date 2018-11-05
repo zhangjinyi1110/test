@@ -1,4 +1,20 @@
-﻿Git test.
-change.
-Three.
-第四次。
+﻿git config --global user.name "(name)"//用户名
+git config --global user.email "(email)"//邮箱
+
+mkdir (name)//创建文件夹
+cd (name)//移动到文件夹
+pwd//显示当前目录
+
+git init//初始化仓库
+
+git add (name)//添加文件到缓存区
+git commit -m "(message)"//提交到本地仓库
+git status//查看状态
+git diff//查看修改内容
+git diff HEAD -- (name)//查看本次修改内容，HEAD可以换成版本号
+git log//查看历史纪录
+git log --pretty=oneline//查看历史记录简化版
+git reset --hard HEAD^//回退一个版本，HEAD^^则回退两个版本，HEAD~100则回退100个版本
+git reset --hard (版本号)//移到该版本号
+cat (name)//查看内容
+git reflog//查看历史操作，版本号
